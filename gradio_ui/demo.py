@@ -13,4 +13,4 @@ def predict(image):
     os.remove("image.jpg")
     return pred.text
 
-gr.Interface(predict, inputs=gr.inputs.Image(type="pil"), outputs="json").launch()
+gr.Interface(predict, inputs=gr.inputs.Image(type="pil"), outputs="json").launch(share= True)
